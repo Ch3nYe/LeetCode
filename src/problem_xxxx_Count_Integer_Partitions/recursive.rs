@@ -1,8 +1,8 @@
 pub struct Solution;
 
 impl Solution {
-    pub fn solve(nums: i32) -> i32 {
-        Self::recu(nums,nums)
+    pub fn solve(num: i32) -> i32 {
+        Self::recu(num,num)
     }
 
     pub fn recu(n: i32, m: i32) -> i32 {
@@ -21,8 +21,8 @@ impl Solution {
 // ------------------------------------------------------ snip ------------------------------------------------------ //
 
 impl super::Solution for Solution {
-    fn solve(nums: i32) -> i32 {
-        Self::solve(nums)
+    fn solve(num: i32) -> i32 {
+        Self::solve(num)
     }
 }
 
