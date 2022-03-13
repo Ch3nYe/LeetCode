@@ -4,7 +4,8 @@
 @contact: sud0su@qq.com
 @date: 2022/3/12 20:55
 */
-pub mod bfs;
+// solve 1 from: https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums/solution/python3-gua-dang-tuo-xie-de-xiao-ding-du-3mqq/
+pub mod mix_heap;
 
 pub trait Solution {
     fn k_smallest_pairs(nums1: Vec<i32>, nums2: Vec<i32>, k: i32) -> Vec<Vec<i32>>;

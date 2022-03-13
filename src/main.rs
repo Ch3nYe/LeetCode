@@ -1,3 +1,5 @@
+pub mod data_structures;
+pub mod test_utilities;
 // 做完一个就注释一个，cargo test 的时候就不会test到注释掉的
 // pub mod problem_0164_maximum_gap;
 // pub mod problem_xxxx_Count_Integer_Partitions;
