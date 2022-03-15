@@ -8,8 +8,7 @@ pub mod test_utilities;
 pub mod problem_1498_number_of_subsequences_that_satisfy_the_given_sum_condition;
 
 fn main() {
-
-    // let res = problem_0164_maximum_gap::bukets_and_pigeonhole_v2::Solution::maximum_gap(Vec::from([3, 6, 9, 1]));
-    // println!("res: {:?}",res);
+    let res = problem_1498_number_of_subsequences_that_satisfy_the_given_sum_condition::double_pointer::Solution::num_subseq(Vec::from([3,5,6,7]),9);
+    println!("res: {:?}",res);
     println!("[+]main.rs| Compile Success");
 }
