@@ -3,7 +3,16 @@ pub struct Solution;
 
 impl Solution {
     pub fn interget_factorization(num: i32) -> i32 {
-        0
+        let mut count = 0;
+        if num == 1 {
+            return 1;
+        }
+        for i in 2..=num {
+            if num%i == 0 {
+                count += Self::interget_factorization(num/i);
+            }
+        }
+        count
     }
 }
 

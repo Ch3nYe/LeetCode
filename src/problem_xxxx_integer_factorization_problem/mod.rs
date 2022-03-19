@@ -20,7 +20,7 @@ mod tests {
             (12, 8),
         ];
 
-        for (nums, expected) in test_cases {
+        for (num, expected) in test_cases {
             assert_eq!(S::interget_factorization(num), expected);
         }
     }
