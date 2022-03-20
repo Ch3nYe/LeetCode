@@ -8,7 +8,9 @@ pub mod test_utilities;
 // pub mod problem_1498_number_of_subsequences_that_satisfy_the_given_sum_condition;
 // pub mod problem_0873_Length_of_Longest_Fibonacci_Subsequence;
 // pub mod problem_0372_Super_Pow;
-pub mod problem_xxxx_integer_factorization_problem;
+// pub mod problem_xxxx_integer_factorization_problem;
+pub mod problem_1941_Check_if_All_Characters_Have_Equal_Number_of_Occurrences;
+
 
 fn main() {
     // let res = problem_0873_Length_of_Longest_Fibonacci_Subsequence::dp_binary_search::Solution::len_longest_fib_subseq(
