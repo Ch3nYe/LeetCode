@@ -9,11 +9,12 @@ impl Solution {
         if fors==revs {
             return true;
         }
-        for i in 0..s.len() {
+        for i in 0..(s.len()/2) {
             if fors[i] == revs[i]{
                 continue;
             }
-            let mut tmp = revs[..s.len()-i-1].to_vec();
+            let mut tmp = revs[i..s.len()-i-1].to_vec();
+            tmp.append(&mut fors[s.len() - i..].to_vec());
             let mut tmp2 = fors[i..s.len()-i-1].to_vec();
             tmp2.append(&mut fors[s.len() - i..].to_vec());
             if fors[i+1..] == tmp {
@@ -27,12 +28,16 @@ impl Solution {
         true
     }
 }
+// abc fors
+// cba revs
 // acbefeca
 // acefebca
 // acefebca fors
 // acbefeca rev
 // abca fors
 // acba revs
+// aydmda fors
+// admdya revs
 // ------------------------------------------------------ snip ------------------------------------------------------ //
 
 impl super::Solution for Solution {

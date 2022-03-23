@@ -16,6 +16,7 @@ mod tests {
 
     pub fn run<S: Solution>() {
         let test_cases = [
+            ("aydmda", true),
             ("abc", false),
             ("aba", true),
             ("abca", true),
