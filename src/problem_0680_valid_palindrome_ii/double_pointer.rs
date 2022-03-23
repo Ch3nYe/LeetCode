@@ -1,5 +1,3 @@
-use std::iter::zip;
-
 pub struct Solution;
 
 impl Solution {
@@ -14,30 +12,21 @@ impl Solution {
                 continue;
             }
             let mut tmp = revs[i..s.len()-i-1].to_vec();
-            tmp.append(&mut fors[s.len() - i..].to_vec());
-            let mut tmp2 = fors[i..s.len()-i-1].to_vec();
-            tmp2.append(&mut fors[s.len() - i..].to_vec());
+            tmp.append(&mut revs[s.len() - i..].to_vec());
             if fors[i+1..] == tmp {
                 return true;
-            } else if revs[i+1..] == tmp2 {
-                return true;
-            } else {
-                return false
             }
+            let mut tmp = fors[i..s.len()-i-1].to_vec();
+            tmp.append(&mut fors[s.len() - i..].to_vec());
+            if revs[i+1..] == tmp {
+                return true;
+            }
+            return false
         }
         true
     }
 }
-// abc fors
-// cba revs
-// acbefeca
-// acefebca
-// acefebca fors
-// acbefeca rev
-// abca fors
-// acba revs
-// aydmda fors
-// admdya revs
+
 // ------------------------------------------------------ snip ------------------------------------------------------ //
 
 impl super::Solution for Solution {

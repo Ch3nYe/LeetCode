@@ -5,6 +5,7 @@
 @date: 2022/3/22 22:34
 */
 pub mod double_pointer;
+pub mod recursive; // ref:https://leetcode-cn.com/problems/valid-palindrome-ii/solution/in-rust-we-trust-string-valid_palindrome-x0rl/
 
 pub trait Solution {
     fn valid_palindrome(s: String) -> bool;
