@@ -11,7 +11,8 @@ pub mod test_utilities;
 // pub mod problem_xxxx_integer_factorization_problem;
 // pub mod problem_1941_Check_if_All_Characters_Have_Equal_Number_of_Occurrences;
 // pub mod problem_xxxx_K_Radius_Subarray_Averages;
-pub mod problem_0680_valid_palindrome_ii;
+// pub mod problem_0680_valid_palindrome_ii;
+pub mod problem_1967_Number_of_Strings_That_Appear_as_Substrings_in_Word;
 
 fn main() {
     // let res = problem_0873_Length_of_Longest_Fibonacci_Subsequence::dp_binary_search::Solution::len_longest_fib_subseq(
