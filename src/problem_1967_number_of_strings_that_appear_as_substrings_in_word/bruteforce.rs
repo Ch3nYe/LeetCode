@@ -1,14 +1,12 @@
+use std::ops::Deref;
+
 pub struct Solution;
 
 impl Solution {
     pub fn num_of_strings(patterns: Vec<String>, word: String) -> i32 {
-        let mut res = 0;
-        for s in patterns {
-            if word.contains(&s) {
-                res += 1;
-            }
-        }
-        res
+        patterns.iter().fold(0,|res, s| {if word.contains(&*s) {res+1} else {res}})
+        // patterns.iter().fold(0,|mut res, s| {if word.contains(s.deref()) {res+=1}; res})
+
     }
 }
 
