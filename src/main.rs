@@ -12,7 +12,8 @@ pub mod test_utilities;
 // pub mod problem_1941_check_if_all_characters_have_equal_number_of_occurrences;
 // pub mod problem_xxxx_k_radius_subarray_averages;
 // pub mod problem_0680_valid_palindrome_ii;
-pub mod problem_1967_number_of_strings_that_appear_as_substrings_in_word;
+// pub mod problem_1967_number_of_strings_that_appear_as_substrings_in_word;
+pub mod problem_1496_path_crossing;
 
 fn main() {
     // let res = problem_0873_length_of_longest_fibonacci_subsequence::dp_binary_search::Solution::len_longest_fib_subseq(
