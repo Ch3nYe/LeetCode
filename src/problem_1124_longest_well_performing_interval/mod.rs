@@ -5,7 +5,7 @@
 @date: 2022/3/26 22:51
 */
 
-// pub mod dynamic; //
+pub mod dynamic; //
 pub mod presum_monotonous_stack; // https://leetcode-cn.com/problems/longest-well-performing-interval/solution/qian-zhui-he-dan-diao-zhan-python3-by-smoon1989/
 
 pub trait Solution {
