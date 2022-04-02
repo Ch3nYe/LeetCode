@@ -16,6 +16,7 @@ mod tests {
 
     pub fn run<S: Solution>() {
         let test_cases = [
+            ("adc", "dcda", true),
             ("ab", "eidbaooo", true),
             ("ab", "eidboaoo", false),
         ];
