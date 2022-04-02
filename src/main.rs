@@ -22,7 +22,5 @@ fn main() {
     // let res = problem_0873_length_of_longest_fibonacci_subsequence::dp_binary_search::Solution::len_longest_fib_subseq(
     //     Vec::from([1,2,3,4,5,6,7,8]));
     // println!("res: {:?}",res);
-    let a:Vec<char> = "test".chars().collect();
-    println!("{:?}",(0 as i32 - 1) as usize);
     println!("[+]main.rs| Compile Success");
 }
