@@ -16,7 +16,8 @@ mod test_utilities;
 // mod problem_1496_path_crossing;
 // mod problem_1124_longest_well_performing_interval;
 // mod problem_0053_maximum_subarray;
-mod problem_0567_permutation_in_string;
+// mod problem_0567_permutation_in_string;
+mod problem_0744_find_smallest_letter_greater_than_target;
 
 fn main() {
     // let res = problem_0873_length_of_longest_fibonacci_subsequence::dp_binary_search::Solution::len_longest_fib_subseq(
