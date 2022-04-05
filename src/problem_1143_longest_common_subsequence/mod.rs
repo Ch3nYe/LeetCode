@@ -5,7 +5,8 @@
 @date: 2022/4/5 15:25
 */
 pub mod dynamic;
-// https://leetcode-cn.com/problems/longest-common-subsequence/
+pub mod dynamic_hashmap; // do not read this, very inefficient
+
 pub trait Solution {
     fn longest_common_subsequence(text1: String, text2: String) -> i32;
 }
