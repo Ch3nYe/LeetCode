@@ -6,6 +6,7 @@
 */
 pub mod dynamic;
 
+// https://leetcode-cn.com/problems/minimum-score-triangulation-of-polygon/
 pub trait Solution {
     fn min_score_triangulation(values: Vec<i32>) -> i32;
 }
@@ -16,8 +17,8 @@ mod tests {
 
     pub fn run<S: Solution>() {
         let test_cases = [
+            (&[3,7,4,5] as &[_], 144),
             (&[1,2,3] as &[_], 6),
-            (&[3,7,4,5], 144),
             (&[1,3,1,4,1,5], 13),
         ];
 
