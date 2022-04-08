@@ -6,7 +6,7 @@
 */
 pub mod string_match;
 pub mod string_concatenate;
-// https://leetcode-cn.com/problems/rotate-string/
+
 pub trait Solution {
     fn rotate_string(s: String, goal: String) -> bool;
 }
