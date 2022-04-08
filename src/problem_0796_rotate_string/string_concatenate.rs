@@ -2,15 +2,15 @@ pub struct Solution;
 
 impl Solution {
     pub fn rotate_string(s: String, goal: String) -> bool {
-        true
+        return s.len()==goal.len() && s.repeat(2).contains(&goal);
     }
 }
 
 // ------------------------------------------------------ snip ------------------------------------------------------ //
 
 impl super::Solution for Solution {
-    fn min_score_triangulation(values: Vec<i32>) -> i32 {
-        Self::min_score_triangulation(values)
+    fn rotate_string(s: String, goal: String) -> bool {
+        Self::rotate_string(s, goal)
     }
 }
 

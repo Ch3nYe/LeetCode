@@ -19,7 +19,8 @@ mod test_utilities;
 // mod problem_0567_permutation_in_string;
 // mod problem_0744_find_smallest_letter_greater_than_target;
 // mod problem_1143_longest_common_subsequence;
-mod problem_1039_min_score_triangulation;
+// mod problem_1039_min_score_triangulation;
+mod problem_0796_rotate_string;
 
 fn main() {
     // let res = problem_0873_length_of_longest_fibonacci_subsequence::dp_binary_search::Solution::len_longest_fib_subseq(

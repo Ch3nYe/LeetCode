@@ -4,7 +4,8 @@
 @contact: sud0su@qq.com
 @date: 2022/4/7 14:10
 */
-pub mod dynamic;
+pub mod string_match;
+pub mod string_concatenate;
 // https://leetcode-cn.com/problems/rotate-string/
 pub trait Solution {
     fn rotate_string(s: String, goal: String) -> bool;
@@ -21,7 +22,7 @@ mod tests {
         ];
 
         for (s, goal, expected) in test_cases {
-            assert_eq!(S::rotate_string(s.to_string(),goal), expected);
+            assert_eq!(S::rotate_string(s.to_string(),goal.to_string()), expected);
         }
     }
 }
