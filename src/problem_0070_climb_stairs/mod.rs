@@ -6,7 +6,7 @@
 */
 
 pub mod dynamic;
-
+// https://leetcode-cn.com/problems/climbing-stairs/
 pub trait Solution {
     fn climb_stairs(n: i32) -> i32;
 }
