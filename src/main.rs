@@ -1,3 +1,5 @@
+extern crate core;
+
 mod data_structures;
 mod test_utilities;
 // 做完一个就注释一个，cargo test 的时候就不会test到注释掉的
