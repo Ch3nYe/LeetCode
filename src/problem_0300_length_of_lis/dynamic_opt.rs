@@ -3,36 +3,24 @@ pub struct Solution;
 impl Solution {
     pub fn length_of_lis(nums: Vec<i32>) -> i32 {
         let mut k = 1;
-        let mut b = vec![0;nums.len()];
+        let mut b = vec![0;nums.len()+1]; // b[k] is the min tail number in sequence that length of mono sequence == k
         b[1] = nums[0];
         for i in 1..nums.len() {
-            if nums[i]>=b[k] { k+=1; b[k]=nums[i];}
-            else {
-                if nums[i] < b[1] { b[1] = nums[i]; }
-                else {
-                    let idx = match b.binary_search(&nums[i]) {
+            if nums[i] > b[k] { k+=1; b[k]=nums[i];} // add a number to mono sequence
+            else { // update b vec
+                if nums[i] < b[1] { b[1] = nums[i]; } // mini number update to b[1]
+                else { // find a appropriate position in b vec
+                    let idx = match b[..(k+1)].binary_search(&nums[i]) {
                         Ok(idx) => idx-1,
                         Err(idx) => idx,
                     };
-                    b[idx]=nums[i];
+                    if b[idx]>nums[i] { // only the b[idx] < nums[i], we should update b[idx]
+                        b[idx]=nums[i];
+                    }
                 }
-                // let idx = Self::bisearch(nums.to_vec(), b.to_vec(), i, k);
-                // b[idx]=nums[i];
             }
         }
         k as i32
-    }
-    fn bisearch(nums: Vec<i32>, b: Vec<i32>, i: usize, mut k: usize) -> usize {
-        if nums[i] < b[1] { return 1; }
-        let mut h=1;
-        let mut j=k;
-        while h!=(j-1) {
-            k = (h+j)/2;
-            if b[k]<=nums[i] {
-                h = k;
-            } else { j=k; }
-        }
-        return j;
     }
 }
 
