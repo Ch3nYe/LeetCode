@@ -2,7 +2,19 @@ pub struct Solution;
 
 impl Solution {
     pub fn erase_overlap_intervals(intervals: Vec<Vec<i32>>) -> i32 {
-        1
+        let mut intervals = intervals;
+        intervals.sort_unstable_by_key(|x| x[1]);
+
+        let mut remove_count = 0;
+        let mut j :usize = 0;
+        for i in 1..intervals.len() {
+            if intervals[i][0] >= intervals[j][1] {
+                j=i;
+            } else {
+                remove_count += 1;
+            }
+        }
+        remove_count
     }
 }
 
