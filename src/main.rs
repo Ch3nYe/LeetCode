@@ -26,7 +26,8 @@ mod test_utilities;
 // mod problem_0070_climb_stairs;
 // mod problem_0300_length_of_lis;
 // mod problem_0435_erase_overlap_intervals;
-mod problem_0738_monotone_increasing_digits;
+// mod problem_0738_monotone_increasing_digits;
+mod problem_0051_solve_n_queens;
 
 fn main() {
     // let res = problem_0873_length_of_longest_fibonacci_subsequence::dp_binary_search::Solution::len_longest_fib_subseq(
