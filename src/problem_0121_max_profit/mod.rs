@@ -5,7 +5,7 @@
 @date: 2022/4/12 10:02
 */
 pub mod dynamic;
-
+// https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
 pub trait Solution {
     fn max_profit(prices: Vec<i32>) -> i32;
 }
