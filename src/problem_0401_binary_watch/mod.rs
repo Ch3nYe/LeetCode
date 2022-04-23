@@ -6,6 +6,7 @@
 */
 
 pub mod brute_force;
+pub mod optimization;
 // https://leetcode-cn.com/problems/binary-watch/
 pub trait Solution {
     fn read_binary_watch(turned_on: i32) -> Vec<String>;
