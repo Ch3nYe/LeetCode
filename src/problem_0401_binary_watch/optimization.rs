@@ -11,12 +11,12 @@ impl Solution {
         let mut res = Vec::new();
 
         // record hours correspond to light
-        let mut hours_turn_on = vec![vec![]; 4]; // 存储i个灯亮时可能的小时数字
+        let mut hours_turn_on = vec![vec![]; 4]; // store possible hours when i light up
         for hour in (0i32..12i32) {
             hours_turn_on[hour.count_ones() as usize].push(format!("{}", hour));
         }
         // record minutes correspond to light
-        let mut minutes_turn_on: Vec<Vec<String>> = vec![vec![]; 6]; // 存储i个灯亮时可能的分钟数字
+        let mut minutes_turn_on: Vec<Vec<String>> = vec![vec![]; 6]; // store possible minutes when i light up
         for minute in (0i32..60i32) {
             minutes_turn_on[minute.count_ones() as usize].push(format!("{:02}", minute));
         }
