@@ -5,7 +5,7 @@
 @date: 2022/4/25 19:47
 */
 pub mod backtract;
-pub mod backtract2;
+pub mod backtract2; // use bit algorithm
 
 pub trait Solution {
     fn total_n_queens(n: i32) -> i32;
