@@ -4,7 +4,7 @@
 @contact: sud0su@qq.com
 @date: 2022/4/20 15:12
 */
-pub mod backtract;
+pub mod backtrack;
 
 pub trait Solution {
     fn solve_n_queens(n: i32) -> Vec<Vec<String>>;
