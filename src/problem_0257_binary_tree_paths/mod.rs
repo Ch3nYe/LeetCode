@@ -8,7 +8,7 @@ use crate::data_structures::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
-pub mod backtract;
+pub mod backtrack;
 
 pub trait Solution {
     fn binary_tree_paths(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<String>;

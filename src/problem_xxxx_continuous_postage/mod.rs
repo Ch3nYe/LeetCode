@@ -4,7 +4,7 @@
 @contact: sud0su@qq.com
 @date: 2022/4/29 21:00
 */
-pub mod backtract;
+pub mod backtrack;
 
 pub trait Solution {
     fn solve_continuous_postage(n: i32, m: i32) -> Vec<i32>;
