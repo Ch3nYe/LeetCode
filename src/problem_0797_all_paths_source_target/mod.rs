@@ -4,7 +4,7 @@
 @contact: sud0su@qq.com
 @date: 2022/5/6 22:38
 */
-pub mod bfs;
+pub mod dfs;
 
 pub trait Solution {
     fn all_paths_source_target(graph: Vec<Vec<i32>>) -> Vec<Vec<i32>>;
