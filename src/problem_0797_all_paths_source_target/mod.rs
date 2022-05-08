@@ -5,7 +5,7 @@
 @date: 2022/5/6 22:38
 */
 pub mod bfs;
-
+// https://leetcode-cn.com/problems/all-paths-from-source-to-target/
 pub trait Solution {
     fn all_paths_source_target(graph: Vec<Vec<i32>>) -> Vec<Vec<i32>>;
 }
