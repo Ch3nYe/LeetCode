@@ -12,14 +12,14 @@ impl Solution {
                 match (n.val, n.left.clone(), n.right.clone()) {
                     (val, None, None) => target_sum==val, // 递归终止条件，约束
                     (val, child, None)|(val, None, child) => {
-                        if target_sum<val { false } else { // 剪枝
+                        // if target_sum<val { false } else { // 无法剪枝 树上有负数
                             Self::has_path_sum(child, target_sum-val)
-                        }
+                        // }
                     },
                     (val, left, right) => {
-                        if target_sum<val { false } else {  // 剪枝
+                        // if target_sum<val { false } else {  // 无法剪枝 树上有负数
                             Self::has_path_sum(left,target_sum-val)|Self::has_path_sum(right,target_sum-val)
-                        }
+                        // }
                     },
                     _ => false
                 }

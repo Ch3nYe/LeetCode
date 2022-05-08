@@ -10,6 +10,7 @@ use crate::data_structures::TreeNode;
 
 
 pub mod dfs;
+pub mod bfs;
 
 pub trait Solution {
     fn has_path_sum(root: Option<std::rc::Rc<RefCell<TreeNode>>>, sum: i32) -> bool;
