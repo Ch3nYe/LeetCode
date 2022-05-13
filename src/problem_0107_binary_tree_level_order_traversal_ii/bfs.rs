@@ -34,8 +34,9 @@ impl Solution {
                     break;
                 }
             }
+            result.reverse();
         }
-        result.reverse();
+
         result
     }
 }
