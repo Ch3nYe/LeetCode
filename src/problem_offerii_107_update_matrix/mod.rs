@@ -17,11 +17,12 @@ mod tests {
     pub fn run<S: Solution>() {
         let test_cases = [
             (&[[0,0,0],[0,1,0],[0,0,0]] as &[_], &[[0,0,0],[0,1,0],[0,0,0]] as &[_]),
-            ([[0,0,0],[0,1,0],[1,1,1]], [[0,0,0],[0,1,0],[1,2,1]])
+            (&[[0,0,0],[0,1,0],[1,1,1]], &[[0,0,0],[0,1,0],[1,2,1]]),
+            // (vec![vec![0,0,0],vec![0,1,0],vec![1,1,1]], vec![vec![0,0,0],vec![0,1,0],vec![1,2,1]]), // S::update_matrix(mat)
         ];
 
         for (mat, expected) in test_cases {
-            assert_eq!(S::update_matrix(mat.to_vec()), expected);
+            assert_eq!(S::update_matrix(mat.iter().copied().map(Vec::from).collect()), expected);
         }
     }
 }
