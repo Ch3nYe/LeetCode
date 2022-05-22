@@ -1,5 +1,3 @@
-extern crate core;
-
 mod data_structures;
 mod test_utilities;
 // 做完一个就注释一个，cargo test 的时候就不会test到注释掉的
@@ -35,12 +33,13 @@ mod test_utilities;
 // mod problem_0257_binary_tree_paths;
 // mod problem_0797_all_paths_source_target;
 // mod problem_0112_has_path_sum;
-// mod problem_0102_tree_level_order;
+mod problem_0102_tree_level_order;
 // mod problem_0111_tree_min_depth;
 // mod problem_0107_binary_tree_level_order_traversal_ii;
 // mod problem_interview_0105_one_edit_away;
 // mod problem_offerii_107_update_matrix;
-mod problem_0782_transform_to_chessboard;
+// mod problem_0782_transform_to_chessboard;
+mod problem_0543_diameter_of_binary_tree;
 
 fn main() {
     // let res = problem_0873_length_of_longest_fibonacci_subsequence::dp_binary_search::Solution::len_longest_fib_subseq(
