@@ -9,6 +9,7 @@ use std::rc::Rc;
 use crate::data_structures::TreeNode;
 
 pub mod divide_conquer;
+pub mod divide_conquer2;
 
 pub trait Solution {
     fn diameter_of_binary_tree(root: Option<Rc<RefCell<TreeNode>>>) -> i32;
