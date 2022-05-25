@@ -46,20 +46,5 @@ fn main() {
     //     Vec::from([1,2,3,4,5,6,7,8]));
     // println!("res: {:?}",res);
 
-    let mut a = 1000;
-    for i in 100..1000 {
-        let mut t = i;
-        let mut sum = 0;
-        while t!=0 {
-            let temp:i32 = t%10;
-            t = t/10;
-            sum += temp.pow(3);
-        }
-        if sum == i {
-            println!("[+]find {}",i);
-        }
-    }
-
-
     println!("[+]main.rs| Compile Success");
 }
