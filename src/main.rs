@@ -39,12 +39,22 @@ mod test_utilities;
 // mod problem_interview_0105_one_edit_away;
 // mod problem_offerii_107_update_matrix;
 // mod problem_0782_transform_to_chessboard;
-mod problem_0543_diameter_of_binary_tree;
+// mod problem_0543_diameter_of_binary_tree;
+mod problem_0846_hand_of_straights;
 
 fn main() {
     // let res = problem_0873_length_of_longest_fibonacci_subsequence::dp_binary_search::Solution::len_longest_fib_subseq(
     //     Vec::from([1,2,3,4,5,6,7,8]));
     // println!("res: {:?}",res);
+
+    let x = &mut [0, 1, 2];
+
+    if let Some((first, elements)) = x.split_first_mut() {
+        *first = 3;
+        elements[0] = 4;
+        elements[1] = 5;
+    }
+    assert_eq!(x, &[3, 4, 5]);
 
     println!("[+]main.rs| Compile Success");
 }
