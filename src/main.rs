@@ -47,14 +47,5 @@ fn main() {
     //     Vec::from([1,2,3,4,5,6,7,8]));
     // println!("res: {:?}",res);
 
-    let x = &mut [0, 1, 2];
-
-    if let Some((first, elements)) = x.split_first_mut() {
-        *first = 3;
-        elements[0] = 4;
-        elements[1] = 5;
-    }
-    assert_eq!(x, &[3, 4, 5]);
-
     println!("[+]main.rs| Compile Success");
 }
