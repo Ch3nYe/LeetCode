@@ -3,6 +3,7 @@ pub struct Solution;
 use crate::data_structures::TreeNode;
 use std::cell::RefCell;
 use std::cmp::Ordering;
+use std::ops::Deref;
 use std::rc::Rc;
 
 impl Solution {
