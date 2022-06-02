@@ -15,6 +15,8 @@ impl Solution {
             node = match val.cmp(&node_ref.val) {
                 Ordering::Less => node_ref.left.clone(),
                 Ordering::Equal => {
+                    drop(node_ref); // drop reference of node_rc, then return node_rc
+
                     return Some(node_rc);
                 },
                 Ordering::Greater => node_ref.right.clone(),
