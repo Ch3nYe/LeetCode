@@ -41,8 +41,8 @@ mod test_utilities;
 // mod problem_0782_transform_to_chessboard;
 // mod problem_0543_diameter_of_binary_tree;
 // mod problem_0846_hand_of_straights;
-mod problem_0055_jump_game;
-mod problem_0045_jump_game_ii;
+// mod problem_0055_jump_game;
+// mod problem_0045_jump_game_ii;
 // mod problem_0700_search_in_a_binary_search_tree;
 mod problem_1710_maxloading_truck;
 
